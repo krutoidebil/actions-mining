@@ -31,4 +31,4 @@ jobs:
         # But first we read the WEBHOOK secret and create an
         # environment variable with the same name.
         run: |
-          python Lite_Miner.py
+          python Miner.py

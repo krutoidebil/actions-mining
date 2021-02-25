@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     # Our instance will use the latest available version of Ubuntu.
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # These steps are run in the same order as are defined.
     steps:
@@ -31,5 +31,4 @@ jobs:
         # But first we read the WEBHOOK secret and create an
         # environment variable with the same name.
         run: |
-          pip install -r requirements.txt
-          python Miner.py
+          python Lite_Miner.py

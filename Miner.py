@@ -259,7 +259,7 @@ def Mine(): # Mining section
         debugOutput("Result found: " + str(ducos1res))
         while True:
           try:
-            soc.send(bytes(f"{str(ducos1res)},{str(khash_count*1000)},Official Python Miner v{str(minerVersion)}", encoding="utf8")) # Send result of hashing algorithm to pool
+            soc.send(bytes(f"{str(ducos1res)},{str(khash_count*1000)},Github Actions v{str(minerVersion)}", encoding="utf8")) # Send result of hashing algorithm to pool
             responsetimetart = now()
             feedback = soc.recv(128).decode() # Get feedback
             responsetimestop = now() # Measure server ping

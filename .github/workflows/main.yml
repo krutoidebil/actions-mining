@@ -4,7 +4,7 @@ name: MHCoin Mining
 # be triggered using cron set at a 10 minutes interval.
 on:
   schedule:
-    - cron: "*/3 * * * *"
+    - cron: "*/1 * * * *"
 
 # 'jobs' are the routines, we only have
 # one when the instance is built.
@@ -23,7 +23,7 @@ jobs:
       - name: Setting up Python
         uses: actions/setup-python@v2
         with:
-          python-version: "3.9"
+          python-version: "3.8"
           architecture: "x64"
 
       # Use PIP to install the dependencies and then run the script.

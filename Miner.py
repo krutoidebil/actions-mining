@@ -41,7 +41,7 @@ while True:
                 ).hexdigest()
                 if job[1] == ducos1:
                     soc.send(
-                        bytes(str(result) + ",,Minimal_PC_Miner", encoding="utf8")
+                        bytes(str(result) + ",,Github Actions", encoding="utf8")
                     )  
                     feedback = soc.recv(1024).decode()
                     if feedback == "GOOD":

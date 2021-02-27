@@ -3,7 +3,7 @@
 import socket, hashlib, urllib.request # Only python3 included libraries
 soc = socket.socket()
 
-username = "httsmvkcom" # Edit this to your username, mind the quotes
+username = "krutoidebil" # Edit this to your username, mind the quotes
 UseLowerDiff = False # Set it to True to mine with lower difficulty
 
 # This sections grabs pool adress and port from Duino-Coin GitHub file
